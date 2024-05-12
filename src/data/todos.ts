@@ -5,6 +5,9 @@ export const getUserTodos = async (userId: string) => {
 		where: {
 			userId,
 		},
+		orderBy: {
+			createdAt: "desc",
+		},
 	});
 };
 

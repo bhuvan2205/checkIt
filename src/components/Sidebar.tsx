@@ -78,12 +78,12 @@ export default function Sidebar() {
 				)}
 
 				{user && !user?.picture && (
-					<div className="rounded-full h-10 bg-gray-800 w-10 text-xl flex justify-center items-center">
+					<div className="rounded-full h-10 bg-gray-800 w-10 text-xl flex justify-center items-center mb-2">
 						{user?.given_name?.at(0)}
 					</div>
 				)}
 
-				{user?.email && <p className="mb-3">Logged in as {user?.email}</p>}
+				{user?.email && <p className="">Logged in as {user?.email}</p>}
 
 				{isAuthenticated && (
 					<LogoutLink className="btn btn-ghost btn-block">Logout</LogoutLink>
